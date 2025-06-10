@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/c7cfece0a6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!-- Typed.js -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!-- jQuery (for OwlCarousel) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/><!-- OwlCarousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+
+  <div id="header">
+    <div class="container">
+      <nav class="navbar">
+  <div class="logo"><span>My Portfolio</span></div>
+  <ul id="menu">
+    <li><a href="#header">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Skills</a></li>
+    <li><a href="#Contact">Contact</a></li>
+  </ul>
+  <i class="fas fa-bars" id="openMenu"></i>
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i> </div>
+</div>
+
+</nav>
+<!-- Sidemenu -->
+<div id="sidemenu">
+  <i class="fas fa-circle-xmark" id="closeMenu"></i>
+  <ul>
+    <li><a href="#header">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#Contact">Contact</a></li>
+  </ul>
+  <div class="menu-btn">
+  <i class="fas fa-bars"></i></div>
+</div>
+    <div class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hi, I'm</div>
+                <div class="text-2">MAHENDAR BHUKYA</div>
+                <div class="text-3">from Birla Institute of Technology, MESRA</div>
+                 <h1>I am a <span class="typing"></span></h1>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+<!--------------------------- THIS IS ABOUT ------------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/black.jpg" alt="About Me Image" />
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-titlee">About Me <h2>I am a student currently and building own projects<br> <span class="typing-2"></span></h2></h1>
+                <p>My name is Mahendar Bhukya, 
+                    and I am currently pursuing an Integrated Master’s 
+                    (5-Year) program in the Department of Mathematics and Computing
+                     at Birla Institute of Technology, Mesra.</p>
+                    <div class="tab-title">
+                    <!-- <p class="tab-link active-link">Download CV</p> -->
+                     <p class="tab-link active-link" onclick="opentab(event, 'skills')">Skills</p>
+                    <p class="tab-link" onclick="opentab(event, 'experience')">Experience</p>
+                    <p class="tab-link" onclick="opentab(event, 'education')">Education</p>
+
+                </div>
+                    <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML / CSS / JavaScript</span><br>Frontend Developer</li>
+                        <li><span>Python / SQL / Power BI</span><br>Data Analyst</li>
+                        <!-- <li><spam>write in side </spam> what about this</li> -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span></span><br></li>
+                        <li><span></span><br> </li>
+                        <!-- <li><spam>write in side </spam> what about this</li> -->
+                    </ul>
+                </div> 
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bit Mesra 2021-2026</span><br>Mathematics and Computing</li>
+                        <!-- <li><span>python/Sql/Power Bi</span><br> Data analyst</li> -->
+                        <!-- <li><spam>write in side </spam> what about this</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------------------------Services----------------------------------------- -->
+ <div id="services">
+    <div class="container">
+        <!-- NEW SECTION HEADER -->
+        <div class="section-header">
+            <h1 class="main-title"> My Services </h1>
+            <div class="subtitle-container">
+                <span class="line"></span>
+                <span class="sub-title"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+        <!-- <h1 class="sub-title"></h1> -->
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <h3><p>I am an entry-level front-end developer with experience in building personal portfolio websites.</p></h3>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Data analyst</h2>
+                <h3><p>I have quite good experience and planning to have a Data analyst experience.</p></h3>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!---------------------- portfolio ------------------------------>
+<div id="portfolio">
+  <div class="section-title">
+    <h2>My Skills</h2>
+    <div class="subtitle-line">
+      <div class="line"></div>
+      <span class="highlight">My Experiences</span>
+      <div class="line"></div>
+    </div>
+  </div>
+  <div class="skills-section">
+    <!-- Left Box -->
+    <div class="left-box">
+      <h2><strong>My Skills & experiences.</strong></h2>
+      <p>
+        Completed a data analytics internship with EY, analyzing unicorn companies using Python, Power BI, and Excel.
+Built a house price prediction model using machine learning techniques and real estate data.
+Achieved a 5-star rating on HackerRank and intermediate level on CodeChef by solving problems in data structures, algorithms, and Python.
+Organized cultural events as an Event Manager at BIT Mesra and actively volunteered with the NSS.
+Member of Google Developer Student Club and a state-level chess player at the 2nd SwaeroLympics.
+      </p>
+      <a href="#" class="read-more">Read more</a>
+    </div>
+    <!-- Right Box -->
+    <div class="right-box">
+      <div class="skill">
+        <label>HTML,CSS, JavaScript <span>90%</span></label>
+        <div class="progress"><div class="bar" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill">
+        <label>PYTHON<span>80%</span></label>
+        <div class="progress"><div class="bar" style="width: 80%;"></div></div>
+      </div>
+      <div class="skill">
+        <label>C,C++ <span>60%</span></label>
+        <div class="progress"><div class="bar" style="width: 60%;"></div></div>
+      </div>
+      <div class="skill">
+        <label>SQL<span>60%</span></label>
+        <div class="progress"><div class="bar" style="width: 60%;"></div></div>
+      </div>
+      <div class="skill">
+        <label> Jupyter, Pandas, Numpy, Matplotlib, Power BI <span>70%</span></label>
+        <div class="progress"><div class="bar" style="width: 70%;"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-----------------------------------------contact section--------------------------------------->
+<div id="Contact">
+  <div class="container">
+    <h2 class="sub-title">Contact Me</h2>
+    <div class="row">
+        <div class="contact-info">
+    <h1 class="sub-title">Get in Touch</h1>
+    <!-- <p>U can contact by the following ways</p> -->
+      <div class="info-item">
+        <i class="fa-solid fa-user icon"></i>
+        <div>
+          <h4>Name</h4>
+          <p>Mahendar Bhukya</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-location-dot icon"></i>
+        <div>
+          <h4>Address</h4>
+          <p>Hyderabad, Telangana, India</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-envelope icon"></i>
+        <div>
+          <h4>Email</h4>
+          <p>mahendarbit21@gmail.com</p>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/mahendar-bhukya-0747b4249"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/mr.mahii_rathod_7/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/mahenda33654857"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://github.com/Mahirathood"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <a href="#" class="btn btn2">Download CV</a>
+    </div>
+    <div class="Message-Me">
+        <h1 class="sub-title">Message Me</h1>
+  <div class="Contact-right">
+    <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="YourName" class="form-control" required>
+        <input type="email" name="Email" placeholder="Your Email" class="form-control" required>
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="button btn btn2">Submit</button>
+    </form>
+    <span id="msg"></span>
+    </div>
+    </div>
+  </div>
+  </div>
+</div>
+<!-- -----------------------copy right-------------------------------------- -->
+ <div class="copy-right">
+    <p>Copyright  Mahendar Bhukya | <i class="fa-regular fa-copyright"> </i>All rights Reserved.</p>
+</div>
+<!-- -------------------------------------------------------------------------------------- -->
+<!-- java script tabs -->
+ <script>
+    var tablinks = document.getElementsByClassName("tab-link");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(event, tabname) {
+    for (let link of tablinks){
+        link.classList.remove("active-link");
+    }
+    for (let content of tabcontents){
+        content.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<!------------------------side menu------------------------------------ -->
+<script>
+  function openMenu() {
+  document.getElementById("sidemenu").classList.add("active");
+}
+function closeMenu() {
+  document.getElementById("sidemenu").classList.remove("active");
+}
+</script>
+<!-- --------------------------google form---------------------------------- -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwJfAiASR-fz3_WZUbbpsZ9LZ-AvQ4T1__KCpkO2IgWz2ZqqcF3YJ4Nm5uUWjdkr70Skg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg')
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<!-- -------------------side menu---------------------------------- -->
+<script>
+  // Get elements
+  const menuIcon = document.querySelector('.fa-bars');
+  const closeIcon = document.querySelector('.fa-circle-xmark');
+  const sidemenu = document.getElementById('sidemenu');
+  // Open menu
+  menuIcon.addEventListener('click', () => {
+    sidemenu.classList.add('active');
+  });
+  // Close menu
+  closeIcon.addEventListener('click', () => {
+    sidemenu.classList.remove('active');
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const openBtn = document.getElementById("openMenu");
+    const closeBtn = document.getElementById("closeMenu");
+    const sidemenu = document.getElementById("sidemenu");
+    openBtn.addEventListener("click", function () {
+      sidemenu.classList.add("active");
+    });
+    closeBtn.addEventListener("click", function () {
+      sidemenu.classList.remove("active");
+    });
+    // Optional: Close menu when clicking a link
+    document.querySelectorAll("#sidemenu a").forEach(link => {
+      link.addEventListener("click", () => {
+        sidemenu.classList.remove("active");
+      });
+    });
+  });
+</script>
+<script src="script.js"></script>
+<script>document.documentElement.style.scrollBehavior = 'auto'; // if needed temporarily
+</script>
+</body>
+</html>
