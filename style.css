@@ -618,7 +618,7 @@ nav.sticky {
   animation: blink 0.7s infinite; /* Keeps the blinking effect */
 }
 /* ----------------------small screen---------------------------------- */
- @media (max-width: 1000px) {
+ @media (max-width: 945px) {
   nav ul {
     display: none; /* hide original nav list */
   }
